@@ -165,9 +165,6 @@
   }
 }
 @layer utilities {
-  .clear-both {
-    clear: both;
-  }
   .m-auto {
     margin: auto;
   }
@@ -188,15 +185,6 @@
   }
   .h-\[70\%\] {
     height: 70%;
-  }
-  .h-\[85\%\] {
-    height: 85%;
-  }
-  .h-\[95\%\] {
-    height: 95%;
-  }
-  .h-\[160px\] {
-    height: 160px;
   }
   .w-full {
     width: 100%;
@@ -274,6 +262,13 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
+  .text-center {
+    text-align: center;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-\[10px\] {
     font-size: 10px;
   }
@@ -288,6 +283,9 @@
   }
   .text-\[18px\] {
     font-size: 18px;
+  }
+  .text-\[22px\] {
+    font-size: 22px;
   }
   .text-\[30px\] {
     font-size: 30px;
@@ -331,9 +329,34 @@
       display: none;
     }
   }
+  .lg\:w-\[40\%\] {
+    @media (width >= 64rem) {
+      width: 40%;
+    }
+  }
   .lg\:w-\[50\%\] {
     @media (width >= 64rem) {
       width: 50%;
+    }
+  }
+  .lg\:w-\[60\%\] {
+    @media (width >= 64rem) {
+      width: 60%;
+    }
+  }
+  .lg\:w-\[65\%\] {
+    @media (width >= 64rem) {
+      width: 65%;
+    }
+  }
+  .lg\:w-\[70\%\] {
+    @media (width >= 64rem) {
+      width: 70%;
+    }
+  }
+  .lg\:w-\[760\%\] {
+    @media (width >= 64rem) {
+      width: 760%;
     }
   }
   .lg\:flex-row {
@@ -346,9 +369,19 @@
       align-items: center;
     }
   }
-  .lg\:text-\[\#2C3948\] {
+  .lg\:text-\[20px\] {
     @media (width >= 64rem) {
-      color: #2C3948;
+      font-size: 20px;
+    }
+  }
+  .lg\:text-\[40px\] {
+    @media (width >= 64rem) {
+      font-size: 40px;
+    }
+  }
+  .lg\:text-\[1\] {
+    @media (width >= 64rem) {
+      color: 1;
     }
   }
 }
